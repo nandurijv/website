@@ -163,7 +163,7 @@ body{
     margin-right:auto;
     text-align: justify;
     font-size:2vw;
-    background-color:#d72323;
+    background-color:#5da7ae;
     padding:5rem;
     position:inherit; 
     color:white;
@@ -225,11 +225,13 @@ td a:link{
     
 }
 #qual table.phone{
+    align-items: center;
     display: none;
 }
 
-@media (max-width:684px){
-    table{
+
+@media (max-width:600px){
+    table.desk{
         display:none;
     }
     #qual table.phone{
