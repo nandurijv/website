@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;669;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@510;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+body{
+    background-color:#eeeeee;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    height:100%;
+    background-color:#303841;
+    width:100%;
+}
+.name{
+    padding:4vw;
+    color:white; 
+    font-family: 'Dancing Script', sans-serif;
+    font-size:5vw;
+    text-align:center;
+}
+.navbar{
+    font-family:'Caveat',sans-serif;
+    width:100vw;
+    bottom:0;
+    position:fixed;
+    background-color:#314e52 ;
+
+}
+.navbar ul{
+    list-style-type: none;
+    background-color:#314e52;
+}
+.navbar ul li{
+    display: inline-block;
+    padding:20px;
+    position:relative;
+}
+.navbar ul li a{
+    color:white;
+    padding:7px 13px;
+    font-size:1rem;
+    text-decoration:none;
+    text-transform: uppercase;
+
+}
+.navbar ul li:hover{
+    background-color:#f0a500;
+    transition: all 0.3s ease;
+}
+.navbar ul li.active{
+    background-color:#e45826;
+    transition: all 0.3s ease;
+}
+.checkbtn{
+    font-size: 50px;
+    color:white;
+    cursor:pointer;
+    display: none;
+    margin-left:30px;
+}
+#check{
+    display: none;
+}
+@media (max-width:1191px){
+    .navbar ul li a{
+        padding:2px;
+    
+    }
+}
+@media (max-width:1037px){
+    .navbar ul li a{
+        padding:1px;
+    
+    }
+}
+@media (max-width:1023px){
+    .navbar ul li a{
+        padding:0.5px;
+    
+    }
+}
+@media (max-width:1016px){
+    .navbar ul li a{
+        padding: 0.3px;
+    
+    }
+}
+
+
+
+
+
+@media (max-width:1015px){
+    .checkbtn{
+        display:block;
+    }
+    .name{
+        display: none;
+    }
+    ul{
+        position:absolute;
+        width:100%;
+        top:-70vh;
+        height:70vh;
+        left:0;
+        text-align:center;
+        left:-2000px;
+        transition:all 0.7s;
+    }
+    .navbar ul li{
+        display:block;
+    }
+    .navbar ul li a{
+        font-size:3rem;
+    }
+    .navbar ul li:hover{
+        background-color:#f0a500;
+    }
+    #check:checked~ul{
+        left:0;
+
+
+    }
+}
+.quote{
+    min-height: 100vh;
+    font-size:3.5vw;
+    font-family:'Shadows Into Light',sans-serif;
+    margin-top:5vw;
+    width:100%;
+}
+.quote .text{
+    padding-left:20px;
+    padding-top:20px;
+    margin-top:10px;
+    width:100%;
+    height:24.5vw;
+    background-color: #ffd944;
+}
+
+#aboutme{
+    min-height:100vh;
+    display:inline-block;
+}
+.aboutme .heading{
+    font-size:5rem;
+    color:black;
+    border-bottom:5px solid orange;
+}
+#aboutme .heading:hover{
+    border-bottom:2px dotted orange;
+    transition:all 0.3s ease;
+}
+.aboutme-content{
+    margin-top:5rem;
+    margin-left:auto;
+    margin-right:auto;
+    text-align: justify;
+    font-size:2vw;
+    background-color:#d72323;
+    padding:5rem;
+    position:inherit; 
+    color:white;
+}
+#contact{
+    min-height: 100vh;
+    font-size:1vw;
+    margin-top:10vh;
+}
+#contact .heading{
+    font-size:5rem;
+    color:black;
+    border-bottom:5px solid orange;
+
+}
+
+#contact img {
+    height:5%;
+    width:5%;
+    margin-right:2vw;
+}
+table {
+    font-size:3vw;
+}
+  
+th, td {
+    text-align: left;
+    padding: 20px;
+}
+  
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+td a:link{
+    text-decoration:none;
+    color:#b088f9;
+}
+
+#qual{
+    min-height:100vh;
+    font-size:5rem;
+    width:auto;
+}
+
+#qual .heading{
+    font-size:5rem;
+    color:black;
+    border-bottom:5px solid orange;
+}
+
+#qual table th{
+    margin-top:100px;
+    font-size:2rem;
+    border-right:2px solid;
+    border-left:2px solid;
+    text-align: center;
+    vertical-align: top;
+    color:white;
+    width:500px;
+}
+#qual table th.one{
+    background-color: #265961;
+    height: fit-content;
+}
+#qual table th.two{
+    background-color: #227066;
+}
+#qual table th.three{
+    background-color: #ffdd5c;
+}
+#qual table th.one:hover{
+    background-color: #61105e;
+}
+#qual table th.two:hover{
+    background-color: #c84771;
+}
+#qual table th.three:hover{
+    background-color: #ffe98a;
+}
