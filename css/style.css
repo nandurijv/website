@@ -236,6 +236,8 @@ td a:link{
     }
     #qual table.phone{
         display:block;
+        margin-left:auto;
+        margin-right:auto;
     }
 }
 
