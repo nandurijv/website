@@ -147,9 +147,11 @@ body{
     display:inline-block;
 }
 .aboutme .heading{
-    font-size:5rem;
+    font-size:5vw;
     color:black;
     border-bottom:5px solid orange;
+    position:relative;
+    margin-bottom:4rem;
 }
 #aboutme .heading:hover{
     border-bottom:2px dotted orange;
@@ -161,7 +163,7 @@ body{
     margin-right:auto;
     text-align: justify;
     font-size:2vw;
-    background-color:#40a798;
+    background-color:#d72323;
     padding:5rem;
     position:inherit; 
     color:white;
@@ -172,7 +174,7 @@ body{
     margin-top:10vh;
 }
 #contact .heading{
-    font-size:5rem;
+    font-size:5vw;
     color:black;
     border-bottom:5px solid orange;
 
@@ -206,7 +208,7 @@ td a:link{
 }
 
 #qual .heading{
-    font-size:5rem;
+    font-size:5vw;
     color:black;
     border-bottom:5px solid orange;
 }
@@ -220,7 +222,23 @@ td a:link{
     vertical-align: top;
     color:white;
     width:500px;
+    
 }
+#qual table.phone{
+    display: none;
+}
+
+@media (max-width:684px){
+    table{
+        display:none;
+    }
+    #qual table.phone{
+        display:block;
+    }
+}
+
+
+
 #qual table th.one{
     background-color: #265961;
     height: fit-content;
