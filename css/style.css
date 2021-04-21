@@ -152,7 +152,6 @@ body{
     font-size:5vw;
     color:black;
     border-bottom:5px solid orange;
-    position:relative;
     margin-bottom:4rem;
 }
 #aboutme .heading:hover{
